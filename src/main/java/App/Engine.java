@@ -1,6 +1,7 @@
 package App;
 
 import IO.Display;
+import IO.FileRead;
 import IO.Input;
 import IO.Output;
 
@@ -47,6 +48,7 @@ public class Engine {
         Display.newLine();
         Output.fileWriteFinal(text.getClosing());
         Display.partingShot();
+        Display.printText(FileRead.readTxt());
     }
 
 }
